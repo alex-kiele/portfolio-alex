@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+
+
+    <div class="container-bg">
+        <div class="container">
+            <div id="blob"></div>
+            <div id="turnon"></div>
+            <div id="blur"></div>
+
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <header><br>
+
+            <h1 id="todayHTML"></h1>
+
+            <h1>Welcome to my website</h1>
+
+        </header>
+    </div>
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">Me</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#who">ABOUT</a></li>
+                <li><a href="#what">WORK</a></li>
+                <li><a href="#where">CV</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <div id="who" class="row">
+
+        <div class="col-sm-12 text-center" id="title">
+            <h2>What Am I ?</h2><br>
+        </div>
+    </div>
+
+    <div id="what" class="row">
+
+        <div class="col-sm-4">
+            <img src="Alex_3D.png" alt="photo" class="img-responsive img-circle text-center">
+        </div>
+
+        <div class="col-sm-8">
+            <div class="container-fluid text-center">
+
+                <br>
+                <h3>I am Alex!</h3><br>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat odit aliquam quam, asperiores
+                    aliquid consequatur at provident quaerat rerum inventore culpa eos temporibus fugiat nihil
+                    repudiandae obcaecati maiores aperiam sapiente!</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="text-center">
+            <button type="submit" class="btn" onclick="openPopup()">Let's connect!</button>
+            <div class="popup" id="popup">
+                <form action="action_page.php">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+
+                    <button type="button" onclick="closePopup()">Send!</button>
+
+            </div>
+        </div>
+
+        <div id="where" class="container-fluid text-center">
+            <h2 class="margin">What I do?</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="img-responsive margin works-img" width="100%" src="01.png.png" alt="bird1">
+                    <p class="under-img">Lorem ipsum </p>
+
+                </div>
+                <div class="col-sm-4">
+                    <img class="img-responsive margin works-img" width="100%" src="02.png.png" alt="bird2">
+                    <p class="under-img">Lorem ipsum </p>
+
+                </div>
+                <div class="col-sm-4">
+                    <img class="img-responsive margin works-img" width="100%" src="03.png.png" alt="bird3">
+                    <p class="under-img">Lorem ipsum </p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="text-center">
+        <button id="exporti">Download my CV</button>
+    </div>
+
+
+    <footer class="container-fluid background4 text-center">
+        <br>
+        <p>Portfolio Made by <a href="https://www.fb.me/">Alex</a></p>
+    </footer>
+
+
+    <div class="text-right">
+        <button type="button" id="light" class="light" onclick="turnlight()"><img src="turnoff.png" id="toggleImage"
+                onclick="toggleImage();" /></button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="newjava.js"></script>
+
+</body>
+
+</html>
